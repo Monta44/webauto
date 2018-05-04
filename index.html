@@ -1,0 +1,178 @@
+<!--home page chi siamo contattaci vendita moto vendita macchine	
+A sinistra le marche d'auto,( fiat, ford, alfa romeo)
+Sulla homepage( nuovi inserimenti ) ultimi modelli inseriti.
+Pulsante compra con il prezzo in basso a destra del cortp centrale.
+Quando clicchi sull'immagine ti fa vedere le diverse angolazioni della della macchina.
+Foto a sinistra e descrizione a destra di fianco
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: left;
+}
+
+header {background: black;color:white;}
+footer {background: #aaa;color:white;}
+.nav {background:#E8E8E8;}
+
+.nav ul {
+    list-style-type: none;
+    padding: 25px;
+}
+.nav ul a {
+    text-decoration: none;
+}
+ul li{
+	display:inline;
+	padding:25px;
+}
+.link > li{
+	display:block;
+}
+
+a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 100px;
+}
+
+
+a:hover, a:active {
+    background-color: black;
+}
+
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer {-webkit-order:3;order:3;}
+}
+.main{
+  border:solid 1px;
+  width:320px;
+  padding:50px;
+}
+img.fianco{
+  float:right;
+  position: absolute;
+  width:50px;
+  height:50px;
+}
+
+ul.link{
+  position:sticky;
+  top: 20px;
+  border:solid 10px;
+}
+ul.board{
+  border:solid 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+<header>
+  <h1>MotorShop</h1>
+</header>
+
+<nav class="nav">
+<ul class="board">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="#">News</a></li>
+  <li><a href="#">Contacts</a></li>
+</ul>
+
+<ul class="link"> 
+
+  <li><a href="#">Auto da corsa</a><img class="fianco" src="http://hilversum.ferraridealers.com/white-label/img/ferrari-badge.svg"></li>
+  <li><a href="#">Fuoristrada</a><img class="fianco" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD76M0EkMYUJOwX576lxEVCtidkAQZsdjCnbNE2yBTjYbiFhYueA"></li>
+  <li><a href="#">Muscle</a><img class="fianco" src="https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/0021/4800/brand.gif?itok=e7EwWuEK"></li>
+  <li><a href="#">Camper</a><img class="fianco" src="https://www.fiat.nl/resources/img/fiat_group_automobile_logo.png"></li>
+  <li><a href="#">Sportive</a><img class="fianco" src="https://www.pirola.com/img/marchi/audi.png"></li>
+  <li><a href="#">Auto familiari</a><img class="fianco" src="https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/0022/1053/brand.gif?itok=hkrBzTxq"></li>
+
+</ul>
+
+
+</nav>
+
+<article class="article">
+  <h1>Nuove Arrivate</h1>
+  <div class="main">
+  <p><strong>Porsche 911</strong></p>
+  <img src="https://immagini.alvolante.it/sites/default/files/styles/rivista_310/public/serie_auto_galleria/2011/11/porsche_911_ant.png?itok=boBLKpDo">
+  <p><strong>Da 103.704&euro; a 295.732&euro;</strong></p>
+  <button>COMPRA</button>
+</div>
+
+<br>
+<br>
+<br>
+
+  <div class="main">
+  <p><strong>Continental GT</strong></p>
+  <img src="https://immagini.alvolante.it/sites/default/files/styles/rivista_310/public/serie_auto_galleria/2018/01/bentley_continental_gt_ant.png?itok=4iSf64vu">
+  <p><strong>Da 207.300&euro; a 207.300&euro;</strong></p>
+  <button>COMPRA</button>
+</div>
+
+<br>
+<br>
+<br>
+
+  <div class="main">
+  <p><strong>GT86</strong></p>
+  <img src="https://immagini.alvolante.it/sites/default/files/styles/rivista_310/public/serie_auto_galleria/2012/05/toyota_gt86_ant_0.png?itok=g1N7nUT3">
+  <p><strong>Da 31.800&euro; a 37.000&euro;</strong></p>
+  <button>COMPRA</button>
+</div>
+
+<br>
+<br>
+<br>
+
+<div class="main">
+  <p><strong>Serie 4 Coupé</strong></p>
+  <img src="https://immagini.alvolante.it/sites/default/files/styles/rivista_310/public/serie_auto_galleria/2013/08/bmw_4_coupe_ant.png?itok=7tCBDrWY">
+  <p><strong>Da 43.100&euro; a 133.900&euro;</strong></p>
+  <button>COMPRA</button>
+</div>
+
+<br>
+<br>
+<br>
+
+<div class="main">
+  <p><strong>Arteon</strong></p>
+  <img src="https://immagini.alvolante.it/sites/default/files/styles/rivista_310/public/serie_auto_galleria/2017/05/volkswagen_arteon_ant_0.png?itok=jRlQag6X">
+  <p><strong>Da 46.500&euro; a 55.300&euro;</strong></p>
+  <button>COMPRA</button>
+</div>
+
+</article>
+
+<footer>Copyright &copy; Montagnolo Daniele</footer>
+</div>
+
+</body>
+</html>
